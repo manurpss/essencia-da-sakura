@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jardim Sakura - Tema & Likes</title>
+  <style>
+    /* --- VARIÁVEIS E TEMA SAKURA --- */
+    :root {
+      /* Tema Sakura Claro */
+      --bg-gradient: linear-gradient(135deg, #fff0f5 0%, #ffe4e1 100%);
+      --card-bg: rgba(255, 255, 255, 0.85);
+      --text-color: #5c3a42;
+      --accent-color: #ffb7c5;
+      --accent-hover: #ff9eaa;
+      --button-text: #4a232b;
+      --border-color: #f7c5cc;
+      --shadow: 0 8px 20px rgba(255, 183, 197, 0.3);
+      --sakura-icon: "🌸";
+    }
+
+    body.dark-theme {
+      /* Tema Sakura Noturno */
+      --bg-gradient: linear-gradient(135deg, #2a1b24 0%, #1a1017 100%);
+      --card-bg: rgba(45, 30, 40, 0.9);
+      --text-color: #fce4ec;
+      --accent-color: #d81b60;
+      --accent-hover: #f06292;
+      --button-text: #ffffff;
+      --border-color: #522538;
+      --shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      --sakura-icon: "🌙🌸";
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg-gradient);
+      color: var(--text-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      padding: 30px 20px;
+      transition: all 0.4s ease;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* --- CABEÇALHO E BOTÃO DE TEMA --- */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 2px dashed var(--border-color);
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    .theme-btn {
+      background-color: var(--accent-color);
+      color: var(--button-text);
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s, background-color 0.3s;
+    }
+
+    .theme-btn:hover {
+      background-color: var(--accent-hover);
+      transform: scale(1.05);
+    }
+
+    /* --- CARDS DE ARTIGO --- */
+    article {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(5px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Detalhe decorativo de flor no topo do card */
+    article::before {
+      content: var(--sakura-icon);
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 1.2rem;
+      opacity: 0.7;
+    }
+
+    article h2 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      padding-right: 25px;
+    }
+
+    article p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+      opacity: 0.9;
+    }
+
+    /* --- ÁREA DE LIKES --- */
+    .article-footer {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .like-btn {
+      background-color: var(--accent-color);
+      color: var(--button-text);
+      border: none;
+      padding: 8px 16px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: transform 0.1s, background-color 0.3s;
+    }
+
+    .like-btn:active {
+      transform: scale(0.92);
+    }
+
+    .like-info {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Essência da Sakura 🌸</h1>
+      <p>Descubra perfumes inspirados na delicadeza das flores de cerejeira.</p>
+      <button id="theme-toggle" class="theme-btn">Alternar Modo</button>
+    </header>
+
+    <main>
+    <!-- Artigo 1 -->
+      <article data-id="artigo-sakura-1">
+        <h2>Kenzo Flower Ikebana</h2>
+        <p> Uma fragrância floral amadeirada que celebra a flor de cerejeira com abertura de chá verde e fundo de sândalo.</p>
+        <div class="article-footer">
+          <button class="like-btn">🌸 Curtir</button>
+          <span class="like-info"><span class="like-count">0</span> curtidas</span>
+          <img src ="https://product-data.raiadrogasil.io/images/17858626.webp" alt="Kenzo Flower Ikebana" style="width: 100px; height: auto; border-radius: 8px;">
+        </div>
+      </article>
+
+      <!-- Artigo 2 -->
+      <article data-id="artigo-sakura-2">
+        <h2>Mahogany - Flor de Cerejeira</h2>
+        <p>Uma colônia nacional mais encorpada e adocicada, com notas de corpo de flor de cerejeira, violeta e pêssego, e fundo de framboesa e musk.</p>
+        <div class="article-footer">
+          <button class="like-btn">🌸 Curtir</button>
+          <span class="like-info"><span class="like-count">0</span> curtidas</span>
+          <img src ="https://http2.mlstatic.com/D_NQ_NP_2X_687655-MLB81868195242_012025-F-mahogany-fragrancia-flor-de-cerejeira-100ml.webp" alt="Mahogany - Flor de Cerejeira" style="width: 100px; height: auto; border-radius: 8px;">
+        </div>
+      </article>
+
+      <!-- Artigo 3 -->
+        <article data-id="artigo-sakura-3">
+            <h2>L'Occitane em Provence Fleurs de Cerisier</h2>
+            <p>Um clássico floral fresco e adocicado inspirado nas cerejeiras da Provença e do Japão.</p>
+            <div class="article-footer">
+            <button class="like-btn">🌸 Curtir</button>
+            <span class="like-info"><span class="like-count">0</span> curtidas</span>
+            <img src = "https://fimgs.net/mdimg/perfume-thumbs/375x500.2023.jpg" alt="L'Occitane em Provence Fleurs de Cerisier" style="width: 100px; height: auto; border-radius: 8px;">
+            </div>
+        </article>
+
+        <!-- Artigo 4 -->
+        <article data-id="artigo-sakura-4">
+            <h2>Guerlain Aqua Allegoria Flora Cherrysia</h2>
+            <p>Um eau de toilette floral frutado com notas de bergamota, melancia, flor de cerejeira e pera nashi.</p>
+            <div class="article-footer">
+            <button class="like-btn">🌸 Curtir</button>
+            <span class="like-info"><span class="like-count">0</span> curtidas</span>
+            <img src=" https://http2.mlstatic.com/D_NQ_NP_666028-CBT79403752939_092024-O-perfume-guerlain-aqua-allegoria-flora-cherrysia-eau-de-toile.webp"
+             alt="Guerlain Aqua Allegoria Flora Cherrysia" style="width: 100px; height: auto; border-radius: 8px;">
+             </div>
+            </article>
+        
+        <!-- Artigo 5 -->
+         <article data-id="artigo-sakura-5">
+            <h2>Dior La Collection Privée - Sakura</h2>
+            <p>Um eau de parfum unissex elegante que combina notas suaves de flor de cerejeira com um toque delicadamente amendoado.</p>
+            <div class="article-footer">
+            <button class="like-btn">🌸 Curtir</button>
+            <span class="like-info"><span class="like-count">0</span> curtidas</span>
+            <img src="https://fimgs.net/mdimg/perfume-thumbs/375x500.48379.jpg"
+             alt="Dior La Collection Privée - Sakura" style="width: 100px; height: auto; border-radius: 8px;">
+             </div>
+            </article>
+    </main>
+  </div>
+
+  <script>
+    // ALTERNÂNCIA E PERSISTÊNCIA DE TEMA
+    
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const savedTheme = localStorage.getItem('sakura-theme');
+
+    // Restaura a preferência salva
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-theme');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+      
+      const isDark = document.body.classList.contains('dark-theme');
+      localStorage.setItem('sakura-theme', isDark ? 'dark' : 'light');
+    });
+
+    const articles = document.querySelectorAll('article');
+
+    articles.forEach(article => {
+      const articleId = article.dataset.id;
+      const likeBtn = article.querySelector('.like-btn');
+      const likeCountSpan = article.querySelector('.like-count');
+
+      // Chave única para o armazenamento de cada artigo
+      const storageKey = `likes_${articleId}`;
+      
+      // Lê do LocalStorage e converte para número (padrão 0 se não existisse)
+      let likes = parseInt(localStorage.getItem(storageKey)) || 0;
+      likeCountSpan.textContent = likes;
+
+      // Evento de clique para somar curtidas
+      likeBtn.addEventListener('click', () => {
+        likes++;
+        likeCountSpan.textContent = likes;
+        localStorage.setItem(storageKey, likes);
+      });
+    });
+  </script>
+</body>
+</html>
