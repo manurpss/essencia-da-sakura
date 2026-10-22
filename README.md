@@ -1,7 +1,7 @@
 🌸 Essência da Sakura | A Poesia das Cerejeiras em Cada Gota
 Seja bem-vinda ao Essência da Sakura, um refúgio dedicado à delicadeza, à renovação e à elegância efêmera das cerejeiras em flor traduzidas para a alta perfumaria.
 
-No Japão, a chegada do Hanami — a contemplação do desabrochar das flores de sakura — celebra a beleza do presente e a graciosidade dos recomeços. Nosso blog é um convite para você vivenciar essa experiência sensorial através do olfato, explorando criações perfumadas que capturam o sussurro das pétalas ao vento e a suavidade da primavera.
+No Japão, a chegada do Hanami — a contemplação do desabrochar das flores de sakura — celebra a beleza do presente e a graciosidade dos recomeços. O meu blog é um convite para você vivenciar essa experiência sensorial através do olfato, explorando criações perfumadas que capturam o sussurro das pétalas ao vento e a suavidade da primavera.
 
 ✨ O que você vai descobrir por aqui:
 🌸 Acordes em Flor: Resenhas poéticas e análises das notas florais, nuances rosadas e toques sutis que dão vida aos perfumes de sakura.
