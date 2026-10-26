@@ -15,3 +15,5 @@ No Japão, a chegada do Hanami — a contemplação do desabrochar das flores de
 "Como pétalas de cerejeira flutuando na brisa da primavera, cada fragrância guarda um instante inesquecível de pura beleza."
 
 Deixe-se envolver pelos aromas e encontre aqui a sua própria essência. 🌸✨
+
+link do blog: https://manurpss.github.io/essencia-da-sakura/
